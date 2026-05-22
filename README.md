@@ -18,7 +18,7 @@
 - XSE VM/provider 的 trace-only 实验
 - 针对 `GodWarGameRecord` 的手机侧存档解析
 
-仓库可以包含公开样本文件：CBE 文件统一放在 `cbe file/`，尼采手机系统/存档文件统一放在 `nicai system files/`。解包输出、日志、诊断截图仍默认被 Git 忽略。
+仓库可以包含公开样本文件：CBE 文件统一放在 `cbe file/`，尼采手机系统/存档文件统一放在 `nicai system files/`。工具运行后生成的 `out_*` 解包目录、日志和调试截图不会上传到 GitHub，需要时可以在本地重新生成。
 
 ## 快速开始
 

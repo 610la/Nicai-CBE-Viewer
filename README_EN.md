@@ -22,8 +22,9 @@ This is research code, not a finished emulator. Current support includes:
 
 The repository may include public sample files: CBE files belong in
 `cbe file/`, and Nicai phone system/save files belong in
-`nicai system files/`. Generated extraction output, logs, and diagnostic
-screenshots are still intentionally ignored by Git.
+`nicai system files/`. Tool-generated `out_*` extraction folders, logs, and
+debug screenshots are not uploaded to GitHub; they can be regenerated locally
+when needed.
 
 ## Quick Start
 
