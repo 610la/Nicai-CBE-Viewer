@@ -1,0 +1,61 @@
+# Local game corpus and phone filesystem dumps.
+# Keep original commercial/game assets outside Git unless you have a clear right to publish them.
+nicai/
+../nicai/
+*.CBE
+*.cbe
+*.sav
+*.dat
+*.idx
+*.rs1
+*.rs2
+*.rs3
+
+# Generated probe output. Most scripts write to out_* folders.
+out*/
+out_*/
+palette_tests/
+__pycache__/
+.python_deps/
+
+# Local dependencies and caches.
+node_modules/
+.npm/
+.cache/
+
+# Viewer/server runtime logs.
+*.log
+*.err.log
+
+# Generated screenshots and diagnostic images in the repository root.
+actor_draw_candidate_*.png
+candidate_*.png
+debug_*.png
+map_candidate*.png
+out_tmp_*.png
+viewer_*preview*.png
+viewer_game_screen_*.png
+viewer_map_*.png
+viewer_relation_*.png
+viewer_struct_*.png
+viewer_xse_*.png
+
+# Editor/OS noise.
+.env
+.env.*
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Intentionally published sample/data folders.
+!cbe file/
+!cbe file/**
+!nicai system files/
+!nicai system files/**
+
+# Keep potentially private phone browser/message runtime traces local.
+nicai system files/.system/WapExplorer/Browser/cookie.txt
+nicai system files/.system/WapExplorer/Browser/history.dat
+nicai system files/.system/WapExplorer/Browser/cache/
+nicai system files/.system/MMS/mailbox/

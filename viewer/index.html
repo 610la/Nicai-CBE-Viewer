@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nicai CBE Viewer</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Nicai CBE Viewer</div>
+      <div id="summary" class="summary">Loading</div>
+    </div>
+    <div class="toolbar">
+      <button id="refreshBtn" class="btn">Refresh</button>
+      <label class="search">
+        <span>Search</span>
+        <input id="searchInput" type="search" placeholder="File name">
+      </label>
+      <label class="toggle">
+        <input id="errorsToggle" type="checkbox">
+        <span>Errors</span>
+      </label>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="panel-head">
+        <div>Games</div>
+        <div id="gameCount"></div>
+      </div>
+      <div id="gameList" class="list"></div>
+    </aside>
+
+    <section class="content">
+      <div class="panel-head">
+        <div id="fileScope">Files</div>
+        <div id="fileCount"></div>
+      </div>
+      <div class="filterbar" id="typeFilters"></div>
+      <div id="fileList" class="file-list"></div>
+    </section>
+
+    <aside class="preview">
+      <div class="panel-head">
+        <div id="previewTitle">Preview</div>
+        <div id="previewMeta"></div>
+      </div>
+      <div id="previewBody" class="preview-body">
+        <div class="empty">Pick a resource.</div>
+      </div>
+    </aside>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

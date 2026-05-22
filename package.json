@@ -1,0 +1,18 @@
+{
+  "name": "cbe-web-emulator-research",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reverse-engineering toolkit for old Nicai/MStar-style CBE games and a future generic browser emulator.",
+  "type": "commonjs",
+  "scripts": {
+    "viewer": "node src/viewer_server.js",
+    "check:js": "node tools/check-js.js",
+    "probe:record": "node src/cbe_godwar_record_probe.js",
+    "probe:filesystem": "node src/cbe_nicai_fs_probe.js",
+    "probe:core": "node src/cbe_runtime_core_probe.js",
+    "probe:scene-core": "node src/cbe_runtime_core_scene_probe.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
